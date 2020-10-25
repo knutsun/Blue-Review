@@ -1,0 +1,87 @@
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+    padding: 14px 16px;
+    margin-bottom: -15px;
+    background-color: white;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  max-height: 100px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);}
+
+ul.topnav li {
+  float: left;
+  font-family: 'Kanit', sans-serif;}
+
+ul.topnav li a .home {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li .link {
+  line-height: 70px;
+  color: #1a143e;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #f0f4ff;}
+ul.topnav li a.home {background-color: white;}
+ul.topnav li a.home:hover {background-color: white;}
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav {  max-height: 400px;}
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+
+  ul.topnav li .home {
+    display: block;
+    margin-right: auto;
+    width: 63%;
+    line-height: 40px;
+}
+
+  ul.topnav li .link {
+    line-height: 45px;
+  }
+
+  .img-responsive {
+    margin-left: 47%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .img-responsive {
+    margin-left: 42%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .img-responsive {
+    margin-left: 38%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .img-responsive {
+    margin-left: 33%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-responsive {
+    margin-left: 29%;
+  }
+}
