@@ -19,7 +19,8 @@ ul.topnav {
 
 ul.topnav li {
   float: left;
-  font-family: 'Kanit', sans-serif;}
+  font-family: 'Cousine', monospace;
+}
 
 ul.topnav li a .home {
   display: block;
@@ -30,7 +31,7 @@ ul.topnav li a .home {
 
 ul.topnav li .link {
   color: #1a143e;
-  font-size: 23px;
+  font-size: 20px;
   display: block;
   text-align: center;
   /* padding: 14px 16px; */
