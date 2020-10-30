@@ -2,6 +2,7 @@ import React from 'react';
 import './nav.css';
 import logo from './static/img/logo.png';
 import department_icon from "./static/img/icons/Police-02.png";
+import officer_icon from "./static/img/icons/Officer-02.png";
 
 
 const Nav = () => {
@@ -15,12 +16,18 @@ const Nav = () => {
         </li>
         <li>
           <a className="link" href="#departments">
-            <img className="department-icon" src={department_icon} alt="logo" />
-            <div id="department-text">Departments</div>
+            <img className="department-icon" src={department_icon} alt="department icon" />
+            <div className="icon-text">Departments</div>
+          </a>
+        </li>
+        <li>
+          <a className="link" href="#officers">
+            <img className="officer-icon" src={officer_icon} alt="officer icon" />
+            <div className="icon-text">Officers</div>
           </a>
         </li>
         <li className="right">
-          <a class="link" href="#about">
+          <a className="link" href="#about">
             About
           </a>
         </li>
