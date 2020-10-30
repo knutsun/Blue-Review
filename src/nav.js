@@ -1,7 +1,7 @@
 import React from 'react';
 import './nav.css';
-import logo from './logo.png';
-import department_icon from "./static/img/Police-02.png";
+import logo from './static/img/logo.png';
+import department_icon from "./static/img/icons/Police-02.png";
 
 
 const Nav = () => {
