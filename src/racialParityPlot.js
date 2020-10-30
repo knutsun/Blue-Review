@@ -9,7 +9,7 @@ class RacialParityPlot extends Component {
     super(props);
 
     this.state = {
-      racialParityPlot: {},
+      racialParityPlot: [],
     }
   }
 
@@ -18,7 +18,7 @@ class RacialParityPlot extends Component {
   }
 
   fetchPlot = () => { 
-    const req = new Request("http://127.0.0.1:5000/department/newyorkcityny", {
+    const req = new Request("http://127.0.0.1:5000/departments/", {
       method: "GET",
       cache: "default",
     });
@@ -37,7 +37,7 @@ class RacialParityPlot extends Component {
   }
 
   render() {
-    return (
+    return this.state.racialParityPlot.map((plot) => (
       <Plot
         className="racialParityPlot"
         data={[
@@ -51,12 +51,12 @@ class RacialParityPlot extends Component {
               "Bi(+)racial",
             ],
             y: [
-              this.state.racialParityPlot.policeWhite,
-              this.state.racialParityPlot.policeHispanic,
-              this.state.racialParityPlot.policeBlack,
-              this.state.racialParityPlot.policeAsian,
-              this.state.racialParityPlot.policeNativeAmerican,
-              this.state.racialParityPlot.policeBiracial,
+              plot.policeWhite,
+              plot.policeHispanic,
+              plot.policeBlack,
+              plot.policeAsian,
+              plot.policeNativeAmerican,
+              plot.policeBiracial,
             ],
 
             type: "scatter",
@@ -88,12 +88,12 @@ class RacialParityPlot extends Component {
               "Bi(+)racial",
             ],
             y: [
-              this.state.racialParityPlot.communityWhite,
-              this.state.racialParityPlot.communitiyHispanic,
-              this.state.racialParityPlot.communityBlack,
-              this.state.racialParityPlot.communityAsian,
-              this.state.racialParityPlot.communityNativeAmerican,
-              this.state.racialParityPlot.communityBiracial,
+              plot.communityWhite,
+              plot.communityHispanic,
+              plot.communityBlack,
+              plot.communityAsian,
+              plot.communityNativeAmerican,
+              plot.communityBiracial,
             ],
             type: "scatter",
             mode: "markers",
@@ -157,7 +157,7 @@ class RacialParityPlot extends Component {
               xanchor: "right",
               y: 0,
               yanchor: "bottom",
-              text: this.state.racialParityPlot.policeSource,
+              text: plot.policeSource,
               opacity: 0.15,
               showarrow: false,
             },
@@ -175,7 +175,9 @@ class RacialParityPlot extends Component {
           pointpos: 1,
         }}
       />
-    );
+    )); 
+      
+  
   }
 }
   
