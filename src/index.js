@@ -15,6 +15,7 @@ function App() {
       <body>
         <Nav />
         <Plot
+          className="racialParityPlot"
           data={[
             {
               x: [
@@ -23,7 +24,7 @@ function App() {
                 "Black",
                 "Asian",
                 "Native American",
-                "Biracial",
+                "Bi(+)racial",
               ],
               y: [46.7, 29.1, 15.2, 8.9, 0.1, null],
               type: "scatter",
@@ -43,8 +44,8 @@ function App() {
               textfont: {
                 family: "Raleway, sans-serif",
               },
+              cliponaxis: false,
             },
-
             {
               x: [
                 "White",
@@ -52,7 +53,7 @@ function App() {
                 "Black",
                 "Asian",
                 "Native American",
-                "Biracial",
+                "Bi(+)racial",
               ],
               y: [32.1, 29.1, 24.3, 13.9, 0.4, null],
               type: "scatter",
@@ -71,6 +72,7 @@ function App() {
               textfont: {
                 family: "Open Sans, sans-serif",
               },
+              cliponaxis: false,
             },
           ]}
           layout={{
@@ -78,13 +80,10 @@ function App() {
               data: {},
               layout: {
                 title: "Watermark Template",
-                // items with a `name` attribute in template.images will be added to any
-                // plot using this template
                 images: [
                   {
                     name: "watermark",
-                    source:
-                      logoAlt,
+                    source: logoAlt,
                     xref: "paper",
                     yref: "paper",
                     x: 0.85,
@@ -93,14 +92,22 @@ function App() {
                     sizey: 0.15,
                     sizing: "stretch",
                     opacity: 0.2,
-                    layer: "below"
+                    layer: "below",
                   },
                 ],
               },
             },
-
-            xaxis: {},
+            xaxis: {
+              automargin: true,
+              tickangle: 45,
+              title: {},
+              standoff: 400,
+            },
             yaxis: {
+              title: {
+                text: "%",
+                automargin: true,
+              },
               range: [0, 60],
             },
             legend: {
@@ -113,6 +120,7 @@ function App() {
               },
             },
             title: "Racial Parity Reflection",
+            pointpos: 1,
           }}
         />
       </body>
