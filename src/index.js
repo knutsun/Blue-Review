@@ -27,6 +27,7 @@ function App() {
                 "Bi(+)racial",
               ],
               y: [46.7, 29.1, 15.2, 8.9, 0.1, null],
+
               type: "scatter",
               mode: "markers",
               marker: {
@@ -42,7 +43,7 @@ function App() {
               name: "Police",
               textposition: "top center",
               textfont: {
-                family: "Raleway, sans-serif",
+                family: "Open Sans, sans-serif",
               },
               cliponaxis: false,
             },
@@ -110,6 +111,19 @@ function App() {
               },
               range: [0, 60],
             },
+            annotations: [
+              {
+                xref: "paper",
+                yref: "paper",
+                x: 1,
+                xanchor: "right",
+                y: 0,
+                yanchor: "bottom",
+                text: "Source: https://bluereview.page.link/Hg6wiWxgGMwaymoCA",
+                opacity: 0.15,
+                showarrow: false,
+              },
+            ],
             legend: {
               y: 0.5,
               yref: "paper",
