@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import RacialParityPlot from "./racialParityPlot";
+// import RacialParityPlot from "./racialParityPlot";
 import "./departments.css";
-import NewYorkCityNYDepartment from "./static/img/departments/newyorkcityny.jpg";
-import ChicagoILDepartment from "./static/img/departments/chicagoil.jpg";
+// import NewYorkCityNYDepartment from "./static/img/departments/newyorkcityny.jpg";
+// import ChicagoILDepartment from "./static/img/departments/chicagoil.jpg";
 import logoAlt from "./static/img/logo-alt.png";
 import Plot from "react-plotly.js";
 
@@ -140,15 +140,20 @@ class Department extends Component {
             },
           },
           xaxis: {
-            automargin: true,
-            tickangle: 45,
-            title: {},
+            // visible: false,
+            // automargin: true,
+            showgrid: false,
+            // showline: false,
+            // tickangle: 45,
             standoff: 400,
           },
           yaxis: {
+            // visible: false,
+            showgrid: false,
+            // showline: false,
             title: {
-              text: "%",
-              automargin: true,
+              text: "TEST",
+              // automargin: true,
             },
             range: [0, 60],
           },
@@ -163,6 +168,11 @@ class Department extends Component {
               text: plot.policeSource,
               opacity: 0.15,
               showarrow: false,
+              align: "center",
+              // borderolor="#c7c7c7",
+              borderwidth: 2,
+              borderpad: 4,
+              bgcolor: "#ff7f0e",
             },
           ],
           legend: {
