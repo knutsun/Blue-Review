@@ -4,6 +4,7 @@ import Head from "./head.js";
 import Nav from './nav.js';
 import "./index.css";
 import RacialParityPlot from "./racialParityPlot.js";
+import GenderParityPlot from "./genderParityPlot.js";
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <body>
         <Nav />
         <RacialParityPlot />
+        <GenderParityPlot />
       </body>
     </html>
   );
