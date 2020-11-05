@@ -51,7 +51,7 @@ class GenderParityPlot extends Component {
           },
         ]}
         layout={{
-          title: "Gender Parity Reflection",
+          title: "Gender Parity",
           pointpos: 1,
           height: 300,
           width: 400,
