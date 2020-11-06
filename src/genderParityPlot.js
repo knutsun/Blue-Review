@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./departments.css";
+import "./department.css";
 import Plot from "react-plotly.js";
 
 class GenderParityPlot extends Component {

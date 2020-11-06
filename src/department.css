@@ -1,0 +1,33 @@
+.department-photo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double goldenrod;
+    color: goldenrod;
+    text-align: center;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    padding: 12px 2px 0 2px;
+    /*border-right: 2px solid goldenrod;*/
+    border-left: 2px solid goldenrod;
+    color: #669;
+}
+
+td {
+    padding-left: 12px;
+}

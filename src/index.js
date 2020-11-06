@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import Head from "./head.js";
 import Nav from './nav.js';
 import "./index.css";
-import RacialParityPlot from "./racialParityPlot.js";
-import GenderParityPlot from "./genderParityPlot.js";
+import Department from "./department.js";
 
 
 
@@ -15,8 +14,7 @@ function App() {
       <Head />
       <body>
         <Nav />
-        <RacialParityPlot />
-        <GenderParityPlot />
+        <Department />
       </body>
     </html>
   );
