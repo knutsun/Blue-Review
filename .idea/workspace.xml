@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b53ae8-59b6-48df-8d1a-87aac8519d7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/img/icons/AverageAppleBlackBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/icons/AverageAppleGreyBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/icons/AverageAppleNoBackground.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.js" afterDir="false" />
     </list>
@@ -71,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604553911544</updated>
       <workItem from="1604553914645" duration="2987000" />
-      <workItem from="1604627901972" duration="27072000" />
+      <workItem from="1604627901972" duration="28084000" />
     </task>
     <servers />
   </component>

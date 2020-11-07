@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./department.css";
-import { TwitterTimelineEmbed, TwitterMentionButton } from 'react-twitter-embed';
+import { TwitterMentionButton } from 'react-twitter-embed';
 import logoAlt from "./static/img/logo-alt.png";
 import officer_icon from "./static/img/icons/Officer-02.png";
 import average_apple_icon from "./static/img/icons/AverageAppleGreyBackground.png";
@@ -55,7 +55,9 @@ class Department extends Component {
         <div>
           <div className="headerGrid">
             <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
-            <Tooltip content="A Department is a bad apple, average apple, or a golden apple.">
+            {/*<p>This department's officers are average apples. <br/> Read reviews here."</p>*/}
+            <Tooltip content={(<p>This department's officers are average apples. <br/> Read reviews <a href="#">here</a>.</p>)}
+                     tipContentHover={true} color="white">
               <a href="http://google.com">
                 <img className="appleIcon" src={average_apple_icon} alt=""/>
               </a>
