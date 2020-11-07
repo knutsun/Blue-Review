@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="15b53ae8-59b6-48df-8d1a-87aac8519d7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604553911544</updated>
       <workItem from="1604553914645" duration="2987000" />
-      <workItem from="1604627901972" duration="29575000" />
+      <workItem from="1604627901972" duration="33407000" />
     </task>
     <servers />
   </component>
@@ -110,5 +110,9 @@
     </state>
     <state width="1379" height="217" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604627896029" />
     <state width="1379" height="217" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1604554392638" />
+    <state x="2067" y="240" key="run.anything.popup" timestamp="1604742070836">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2067" y="240" key="run.anything.popup/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1604742070836" />
   </component>
 </project>

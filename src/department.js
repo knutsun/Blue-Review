@@ -22,8 +22,6 @@ class Department extends Component {
     }
   }
 
-
-
   componentDidMount(){
     this.fetchPlot();
   }
@@ -54,9 +52,9 @@ class Department extends Component {
     this.state.racialParityPlot.map((plot) => (
         <div>
           <div className="headerGrid">
-            <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
+            <h2 className="departmentTitle">{plot.department.city.name}, {plot.department.acronymn}</h2>
             <Tooltip content={(
-                <p>This department's officers are average apples.
+                <p>This department's officers <br />are rated as average apples.
                   <br/>Rate or read reviews <a href="#">here</a>.
                 </p>
             )}
@@ -69,7 +67,8 @@ class Department extends Component {
 
           </div>
 
-          <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />} lazyRender={true}>
+          <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />}
+                       lazyRender={true}>
 
             <div className="grid-container">
               <div>
@@ -77,24 +76,24 @@ class Department extends Component {
                   <tr>
                     <td>
                       <TwitterMentionButton
-                        screenName={plot.departmentTwitterHandle}
+                        screenName={plot.department.twitterHandle}
                       />
                     </td>
                   </tr>
                   <tr>
-                      <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
+                      <td><a href={plot.department.twitterUrl}>@{plot.department.twitterHandle}</a></td>
                   </tr>
 
                 </table>
                 <table>
                   <tr>
-                    <td>{plot.address}</td>
+                    <td>{plot.department.address}</td>
                   </tr>
                   <tr>
-                    <td>{plot.city} {plot.state}</td>
+                    <td>{plot.department.city.name} {plot.department.state}</td>
                   </tr>
                   <tr>
-                    <td>Population {plot.cityPopulation.toLocaleString()}</td>
+                    <td>Population: {plot.department.city.population.toLocaleString()}</td>
                   </tr>
                 </table>
 
@@ -102,11 +101,11 @@ class Department extends Component {
                   <tbody>
                   <tr>
                     <td>Commissioner: </td>
-                    <td>{plot.departmentCommissioner}, since {plot.commissionerYearStarted}</td>
+                    <td>{plot.department.commissioner}, since {plot.department.commissionerYearStarted}</td>
                   </tr>
                   <tr>
                     <td>Official Site: </td>
-                    <td><a href={plot.departmentUrl}>{plot.departmentUrl}</a></td>
+                    <td><a href={plot.department.url}>{plot.department.url}</a></td>
                   </tr>
                   </tbody>
                 </table>
@@ -115,7 +114,7 @@ class Department extends Component {
 
                 <div className="officerGrid">
                   <img className="officerIcon" src={officer_icon} alt="Police officer icon"/>
-                  <a href="#"><h2 className="officerListHeader">Rate or Review {plot.departmentAcronymn} Officers</h2></a>
+                  <a href="#"><h2 className="officerListHeader">Rate or Review {plot.department.acronymn} Officers</h2></a>
                 </div>
 
             </div>
@@ -133,12 +132,12 @@ class Department extends Component {
                     "Bi(+)racial",
                   ],
                   y: [
-                    plot.policeWhite,
-                    plot.policeHispanic,
-                    plot.policeBlack,
-                    plot.policeAsian,
-                    plot.policeNativeAmerican,
-                    plot.policeBiracial,
+                    plot.department.demographics.white,
+                    plot.department.demographics.hispanic,
+                    plot.department.demographics.black,
+                    plot.department.demographics.asian,
+                    plot.department.demographics.nativeAmerican,
+                    plot.department.demographics.biracial,
                   ],
 
                   type: "scatter",
@@ -170,12 +169,12 @@ class Department extends Component {
                     "Bi(+)racial",
                   ],
                   y: [
-                    plot.communityWhite,
-                    plot.communityHispanic,
-                    plot.communityBlack,
-                    plot.communityAsian,
-                    plot.communityNativeAmerican,
-                    plot.communityBiracial,
+                    plot.department.city.demographics.white,
+                    plot.department.city.demographics.hispanic,
+                    plot.department.city.demographics.black,
+                    plot.department.city.demographics.asian,
+                    plot.department.city.demographics.nativeAmerican,
+                    plot.department.city.demographics.biracial,
                   ],
                   type: "scatter",
                   mode: "markers",
@@ -219,20 +218,15 @@ class Department extends Component {
                   },
                 },
                 xaxis: {
-                  // visible: false,
-                  // automargin: true,
                   showgrid: false,
                   showline: false,
-                  // tickangle: 45,
                   standoff: 400,
                 },
                 yaxis: {
-                  // visible: false,
                   showgrid: false,
                   showline: false,
                   title: {
                     text: "%",
-                    // automargin: true,
                   },
                   range: [0, 60],
                 },
@@ -244,7 +238,7 @@ class Department extends Component {
                     xanchor: "right",
                     y: 0,
                     yanchor: "bottom",
-                    text: plot.policeSource,
+                    text: plot.department.demographics.raceSource,
                     opacity: 0.95,
                     showarrow: false,
                     align: "center",
@@ -273,7 +267,7 @@ class Department extends Component {
               className="genderParityPlot"
               data={[
                 {
-                  values: [plot.policeMale, plot.policeFemale],
+                  values: [plot.department.demographics.male, plot.department.demographics.female],
                   type: "pie",
                   labels: ["Men", "Women"],
                   textinfo: "label+percent",
@@ -295,7 +289,7 @@ class Department extends Component {
                     y: -.5,
                     yanchor: "bottom",
                     text:
-                    plot.genderSource,
+                    plot.department.demographics.genderSource,
                     opacity: 0.15,
                     showarrow: false,
                   },
