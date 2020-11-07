@@ -3,6 +3,7 @@ import './nav.css';
 import logo from './static/img/logo.png';
 import department_icon from "./static/img/icons/Police-02.png";
 import officer_icon from "./static/img/icons/Officer-02.png";
+import average_apple_icon from "./static/img/icons/AverageAppleGreyBackground.png";
 
 
 const Nav = () => {
@@ -28,7 +29,8 @@ const Nav = () => {
         </li>
         <li className="right">
           <a className="link" href="#about">
-            About
+            <div className="icon-text">About</div>
+              <img className="apple-icon" src={average_apple_icon} alt="Average apple icon" />
           </a>
         </li>
       </ul>

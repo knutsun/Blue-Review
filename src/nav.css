@@ -15,7 +15,7 @@ ul.topnav {
   overflow: hidden;
   background-color: #fff;
   max-height: 100px;
-  box-shadow: 1px 1px goldenrod;}
+  box-shadow: 1px 2px 1px goldenrod;}
 
 ul.topnav li {
   float: left;
@@ -54,6 +54,13 @@ ul.topnav li .link {
     margin-top: 11px;
     max-height: 55px;
     max-width: 65px;
+    padding: 14px 16px;
+    background-color: transparent;
+}
+.apple-icon {
+    /*margin-top: 11px;*/
+    max-height: 85px;
+    max-width: 85px;
     padding: 14px 16px;
     background-color: transparent;
 }

@@ -57,7 +57,7 @@ class Department extends Component {
             <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
             <Tooltip content={(
                 <p>This department's officers are average apples.
-                  <br/> Read reviews <a href="#">here</a>.
+                  <br/>Rate or read reviews <a href="#">here</a>.
                 </p>
             )}
                      tipContentHover={true} color="white">
