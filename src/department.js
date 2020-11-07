@@ -55,13 +55,18 @@ class Department extends Component {
         <div>
           <div className="headerGrid">
             <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
-            {/*<p>This department's officers are average apples. <br/> Read reviews here."</p>*/}
-            <Tooltip content={(<p>This department's officers are average apples. <br/> Read reviews <a href="#">here</a>.</p>)}
+            <Tooltip content={(
+                <p>This department's officers are average apples.
+                  <br/> Read reviews <a href="#">here</a>.
+                </p>
+            )}
                      tipContentHover={true} color="white">
-              <a href="http://google.com">
+              <a href="#">
                 <img className="appleIcon" src={average_apple_icon} alt=""/>
               </a>
+              <h2 className="ratingScore">3.2</h2>
             </Tooltip>
+
           </div>
 
           <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />} lazyRender={true}>

@@ -17,7 +17,7 @@ function App() {
       <Head />
       <body>
         <Nav />
-        <CountryMap />
+        {/*<CountryMap />*/}
         <AllDepartments />
         <Department />
       </body>
