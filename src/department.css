@@ -33,8 +33,8 @@ td {
 }
 
 .Collapsible {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: -5%;
+    /*margin-bottom: -3%;*/
     font-family: 'Cousine', monospace;
     font-size: 35px;
     margin-left: 3%;
@@ -44,10 +44,10 @@ td {
 
 .departmentTitle {
     float: start;
-    margin-bottom: -8%;
+    /*margin-bottom: -8%;*/
     font-family: 'Cousine', monospace;
     font-size: 35px;
-    margin-left: 10%;
+    margin-left: 15%;
     color: #1a143e;
 }
 
@@ -56,4 +56,46 @@ td {
     grid-template-columns: auto auto;
     background-color: #f5f4f2;
     padding: 10px;
+}
+.officerIcon {
+    max-height: 100px;
+    max-width: 100px;
+    background-color: transparent;
+}
+.officerListHeader {
+    float: left;
+    color: black;
+    font-size: 25px;
+    margin-right: 15%;
+    border-bottom: 2px solid goldenrod;
+}
+.officerGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f5f4f2;
+    /*margin-bottom: 0;*/
+
+}
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: auto 10%;
+    background-color: #f5f4f2;
+    margin: 0;
+}
+
+.appleIcon {
+    float: left;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.react-tooltip-lite {
+    background: #333;
+    color: white;
+    font-family: 'Cousine', monospace;
+}
+
+.react-tooltip-lite-arrow {
+    border-color: #333;
 }

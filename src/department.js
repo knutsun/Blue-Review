@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import "./department.css";
-import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import { TwitterTimelineEmbed, TwitterMentionButton } from 'react-twitter-embed';
 import logoAlt from "./static/img/logo-alt.png";
+import officer_icon from "./static/img/icons/Officer-02.png";
+import average_apple_icon from "./static/img/icons/AverageAppleGreyBackground.png";
 import Plot from "react-plotly.js";
 import Collapsible from 'react-collapsible';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import Tooltip from 'react-tooltip-lite';
+
+
 
 class Department extends Component {
 
@@ -16,6 +21,8 @@ class Department extends Component {
       racialParityPlot: [],
     }
   }
+
+
 
   componentDidMount(){
     this.fetchPlot();
@@ -42,14 +49,36 @@ class Department extends Component {
   }
 
   render() {
+
     return (
     this.state.racialParityPlot.map((plot) => (
         <div>
-          <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
+          <div className="headerGrid">
+            <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
+            <Tooltip content="A Department is a bad apple, average apple, or a golden apple.">
+              <a href="http://google.com">
+                <img className="appleIcon" src={average_apple_icon} alt=""/>
+              </a>
+            </Tooltip>
+          </div>
+
           <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />} lazyRender={true}>
 
             <div className="grid-container">
               <div>
+                <table>
+                  <tr>
+                    <td>
+                      <TwitterMentionButton
+                        screenName={plot.departmentTwitterHandle}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                      <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
+                  </tr>
+
+                </table>
                 <table>
                   <tr>
                     <td>{plot.address}</td>
@@ -72,25 +101,17 @@ class Department extends Component {
                     <td>Official Site: </td>
                     <td><a href={plot.departmentUrl}>{plot.departmentUrl}</a></td>
                   </tr>
-                  <tr>
-                    <td>Twitter: </td>
-                    <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
-                  </tr>
                   </tbody>
                 </table>
+
               </div>
 
+                <div className="officerGrid">
+                  <img className="officerIcon" src={officer_icon} alt="Police officer icon"/>
+                  <a href="#"><h2 className="officerListHeader">Rate or Review {plot.departmentAcronymn} Officers</h2></a>
+                </div>
 
-              <TwitterTimelineEmbed
-                  sourceType="profile"
-                  screenName={plot.departmentTwitterHandle}
-                  options={
-                    {height: 400, width: 500}
-                  }
-              />
             </div>
-
-
 
           <Plot
               className="racialParityPlot"
