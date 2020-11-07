@@ -4,7 +4,8 @@ import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import logoAlt from "./static/img/logo-alt.png";
 import Plot from "react-plotly.js";
 import Collapsible from 'react-collapsible';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 
 class Department extends Component {
 
@@ -44,10 +45,10 @@ class Department extends Component {
     return (
     this.state.racialParityPlot.map((plot) => (
         <div>
+          <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
+          <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />} lazyRender={true}>
 
-          <Collapsible trigger={plot.city} lazyRender={true}>
-
-          <table>
+            <table>
             <tr>
               <td>{plot.address}</td>
             </tr>

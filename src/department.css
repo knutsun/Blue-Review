@@ -34,26 +34,20 @@ td {
 
 .Collapsible {
     margin-top: 5%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     font-family: 'Cousine', monospace;
     font-size: 35px;
     margin-left: 3%;
-    color: #1a143e;
+    color: #38A1F7;
+    float: top;
 }
 
-.header{
-    cursor: pointer;
-    border: solid 1px #f2f2f2;
-    padding: 15px;
-    background-color: lightgrey;
-    color: #FFF;
-}
-.content{
-    /*cursor: pointer;*/
-    /*border-left: solid 1px #f2f2f2;*/
-    /*border-right: solid 1px #f2f2f2;*/
-    /*border-bottom: solid 1px #f2f2f2;*/
-    /*border-radius: 0 0 5px 5px;*/
-    /*padding: 15px;*/
-    /*font-size: 14px;*/
+.departmentTitle {
+    float: start;
+    /*margin-top: 5%;*/
+    margin-bottom: -8%;
+    font-family: 'Cousine', monospace;
+    font-size: 35px;
+    margin-left: 10%;
+    color: #1a143e;
 }
