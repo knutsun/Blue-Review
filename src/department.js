@@ -48,42 +48,48 @@ class Department extends Component {
           <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
           <Collapsible trigger={<FontAwesomeIcon icon={faPlusSquare} />} lazyRender={true}>
 
-            <table>
-            <tr>
-              <td>{plot.address}</td>
-            </tr>
-            <tr>
-              <td>{plot.city} {plot.state}</td>
-            </tr>
-            <tr>
-              <td>Population {plot.cityPopulation.toLocaleString()}</td>
-            </tr>
-          </table>
+            <div className="grid-container">
+              <div>
+                <table>
+                  <tr>
+                    <td>{plot.address}</td>
+                  </tr>
+                  <tr>
+                    <td>{plot.city} {plot.state}</td>
+                  </tr>
+                  <tr>
+                    <td>Population {plot.cityPopulation.toLocaleString()}</td>
+                  </tr>
+                </table>
 
-          <table>
-            <tbody>
-              <tr>
-                <td>Commissioner: </td>
-                <td>{plot.departmentCommissioner}, since {plot.commissionerYearStarted}</td>
-              </tr>
-              <tr>
-                <td>Official Site: </td>
-                <td><a href={plot.departmentUrl}>{plot.departmentUrl}</a></td>
-              </tr>
-              <tr>
-                <td>Twitter: </td>
-                <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
-              </tr>
-            </tbody>
-          </table>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Commissioner: </td>
+                    <td>{plot.departmentCommissioner}, since {plot.commissionerYearStarted}</td>
+                  </tr>
+                  <tr>
+                    <td>Official Site: </td>
+                    <td><a href={plot.departmentUrl}>{plot.departmentUrl}</a></td>
+                  </tr>
+                  <tr>
+                    <td>Twitter: </td>
+                    <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
 
-          <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName={plot.departmentTwitterHandle}
-              options={
-                {height: 400, width: 500}
-              }
-          />
+
+              <TwitterTimelineEmbed
+                  sourceType="profile"
+                  screenName={plot.departmentTwitterHandle}
+                  options={
+                    {height: 400, width: 500}
+                  }
+              />
+            </div>
+
 
 
           <Plot

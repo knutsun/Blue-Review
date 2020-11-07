@@ -25,7 +25,7 @@ table {
 tr {
     padding: 12px 2px 0 2px;
     border-left: 2px solid goldenrod;
-    color: #669;
+    color: #1a143e;
 }
 
 td {
@@ -44,10 +44,16 @@ td {
 
 .departmentTitle {
     float: start;
-    /*margin-top: 5%;*/
     margin-bottom: -8%;
     font-family: 'Cousine', monospace;
     font-size: 35px;
     margin-left: 10%;
     color: #1a143e;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f5f4f2;
+    padding: 10px;
 }
