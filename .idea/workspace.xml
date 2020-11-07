@@ -23,13 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/allDepartments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/allDepartments.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/allDepartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/allDepartments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/countryMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/countryMap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/countryMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/countryMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/head.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604553911544</updated>
       <workItem from="1604553914645" duration="2987000" />
-      <workItem from="1604627901972" duration="18119000" />
+      <workItem from="1604627901972" duration="19932000" />
     </task>
     <servers />
   </component>

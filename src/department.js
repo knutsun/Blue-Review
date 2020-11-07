@@ -3,6 +3,8 @@ import "./department.css";
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import logoAlt from "./static/img/logo-alt.png";
 import Plot from "react-plotly.js";
+import Collapsible from 'react-collapsible';
+
 
 class Department extends Component {
 
@@ -35,6 +37,7 @@ class Department extends Component {
     }).catch(err => {
       console.log("ERROR: " + err);
     })
+
   }
 
   render() {
@@ -42,8 +45,7 @@ class Department extends Component {
     this.state.racialParityPlot.map((plot) => (
         <div>
 
-
-          <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
+          <Collapsible trigger={plot.city} lazyRender={true}>
 
           <table>
             <tr>
@@ -265,12 +267,9 @@ class Department extends Component {
                 ],
               }}
           />
-
-
           <hr />
+          </Collapsible>
         </div>
-
-
 
     )));
   }
