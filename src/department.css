@@ -10,11 +10,12 @@ hr {
     border-top: medium double goldenrod;
     color: goldenrod;
     text-align: center;
+    margin-top: 5%;
 }
 
 table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
-    font-size: 12px;
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
     margin: 45px;
     width: 480px;
     text-align: left;
@@ -23,11 +24,36 @@ table {
 
 tr {
     padding: 12px 2px 0 2px;
-    /*border-right: 2px solid goldenrod;*/
     border-left: 2px solid goldenrod;
     color: #669;
 }
 
 td {
     padding-left: 12px;
+}
+
+.departmentTitle {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-family: 'Cousine', monospace;
+    font-size: 35px;
+    margin-left: 3%;
+    color: #1a143e;
+}
+
+.header{
+    cursor: pointer;
+    border: solid 1px #f2f2f2;
+    padding: 15px;
+    background-color: lightgrey;
+    color: #FFF;
+}
+.content{
+    /*cursor: pointer;*/
+    /*border-left: solid 1px #f2f2f2;*/
+    /*border-right: solid 1px #f2f2f2;*/
+    /*border-bottom: solid 1px #f2f2f2;*/
+    /*border-radius: 0 0 5px 5px;*/
+    /*padding: 15px;*/
+    /*font-size: 14px;*/
 }

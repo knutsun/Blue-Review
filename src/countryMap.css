@@ -1,0 +1,14 @@
+path {
+    pointer-events: all;
+    fill: lightsteelblue;
+}
+path:hover {
+    opacity: 0.50;
+    cursor: pointer;
+}
+
+.countryMap {
+    margin-top: 3%;
+    margin-left: 15%;
+    width: 50%;
+}

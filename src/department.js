@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-// import RacialParityPlot from "./racialParityPlot";
 import "./department.css";
-// import NewYorkCityNYDepartment from "./static/img/departments/newyorkcityny.jpg";
-// import ChicagoILDepartment from "./static/img/departments/chicagoil.jpg";
-import department_icon from "./static/img/icons/Police-02.png";
-
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import logoAlt from "./static/img/logo-alt.png";
 import Plot from "react-plotly.js";
 
@@ -47,18 +43,17 @@ class Department extends Component {
         <div>
 
 
-
-          <h2>{plot.city} PD</h2>
+          <h2 className="departmentTitle">{plot.city}, {plot.departmentAcronymn}</h2>
 
           <table>
             <tr>
-              <td>{plot.departmentAcronymn}</td>
+              <td>{plot.address}</td>
             </tr>
             <tr>
               <td>{plot.city} {plot.state}</td>
             </tr>
             <tr>
-              <td>Population {plot.cityPopulation}:</td>
+              <td>Population {plot.cityPopulation.toLocaleString()}</td>
             </tr>
           </table>
 
@@ -74,10 +69,20 @@ class Department extends Component {
               </tr>
               <tr>
                 <td>Twitter: </td>
-                <td><a href={plot.departmentTwitterUrl}>@{plot.departmentAcronymn}</a></td>
+                <td><a href={plot.departmentTwitterUrl}>@{plot.departmentTwitterHandle}</a></td>
               </tr>
             </tbody>
           </table>
+
+          <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName={plot.departmentTwitterHandle}
+              options={
+                {height: 400, width: 500}
+              }
+          />
+
+
           <Plot
               className="racialParityPlot"
               data={[
@@ -260,6 +265,8 @@ class Department extends Component {
                 ],
               }}
           />
+
+
           <hr />
         </div>
 

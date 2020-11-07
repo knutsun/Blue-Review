@@ -4,6 +4,9 @@ import Head from "./head.js";
 import Nav from './nav.js';
 import "./index.css";
 import Department from "./department.js";
+import AllDepartments from "./allDepartments.js";
+
+import CountryMap from "./countryMap";
 
 
 
@@ -14,6 +17,8 @@ function App() {
       <Head />
       <body>
         <Nav />
+        <CountryMap />
+        <AllDepartments />
         <Department />
       </body>
     </html>

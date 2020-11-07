@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b53ae8-59b6-48df-8d1a-87aac8519d7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bluereview-react-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allDepartments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/allDepartments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allDepartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/allDepartments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/countryMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/countryMap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/countryMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/countryMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/departments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/department.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genderParityPlot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/genderParityPlot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +59,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604553911544</updated>
       <workItem from="1604553914645" duration="2987000" />
-      <workItem from="1604627901972" duration="3937000" />
+      <workItem from="1604627901972" duration="18119000" />
     </task>
     <servers />
   </component>
